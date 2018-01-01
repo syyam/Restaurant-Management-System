@@ -1,0 +1,71 @@
+﻿<Window x:Class="RestaurantManagementSystemFinal.Report"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantManagementSystemFinal"
+        mc:Ignorable="d"
+        Title="Report" Height="894.744" Width="1120.164">
+    <Grid Margin="0,0,-6,-19.8" Height="943" VerticalAlignment="Top">
+        <TextBlock HorizontalAlignment="Left" Margin="315,22,0,0" TextWrapping="Wrap" Text="Filter Report" VerticalAlignment="Top" Height="88" Width="603" FontSize="36" FontFamily="Century Gothic" Foreground="Black" TextAlignment="Center"/>
+        <StackPanel HorizontalAlignment="Right" Height="17" VerticalAlignment="Top" Width="1461" Background="#FFA1161B"/>
+        <Image HorizontalAlignment="Left" Height="132" Margin="58,0,0,0" VerticalAlignment="Top" Width="142"  MouseLeftButtonDown="Image_MouseLeftButtonDown">
+            <Image.Source>
+                <BitmapImage UriSource="file:///C:\Users\Muhammad Hasham\source\repos\RestaurantManagementSystemFinal\RestaurantManagementSystemFinal\projImages\mainSRC.jpg"/>
+            </Image.Source>
+        </Image>
+        <Label Content="Product Section" HorizontalAlignment="Left" Margin="553,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.575,0.151" FontSize="16" FontFamily="Century Gothic"/>
+        <TextBox Name="priceofproduct" HorizontalAlignment="Left" Height="23" Margin="500,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Please Enter Price :" HorizontalAlignment="Left" Margin="374,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.218,0.525"/>
+        <ComboBox Name="recordcombo1" HorizontalAlignment="Left" Margin="500,157,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter Product Deal :" HorizontalAlignment="Left" Margin="374,157,0,0" VerticalAlignment="Top" Width="115"/>
+        <Button Content="Display Product Details" HorizontalAlignment="Left" Margin="565,220,0,0" VerticalAlignment="Top" Width="141" Click="Button_Click" Background="#FFA1161B" Foreground="White" Height="31" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <DatePicker Name="date" HorizontalAlignment="Left" Margin="380,358,0,0" VerticalAlignment="Top" />
+        <Button Content="Display Order Details" HorizontalAlignment="Left" Margin="572,419,0,0" VerticalAlignment="Top" Width="144" Click="Button_Click_1" Background="#FFA1161B" Foreground="White" Height="31" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Select Discount Name" HorizontalAlignment="Left" Margin="690,356,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="discombo" HorizontalAlignment="Left" Margin="821,356,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Name="supplycheck" Content="Supply" HorizontalAlignment="Left" Height="17" Margin="483,535,0,0" VerticalAlignment="Top" Width="86"/>
+        <CheckBox Name="salarycheck" Content="Salary" HorizontalAlignment="Left" Height="17" Margin="739,535,0,0" VerticalAlignment="Top" Width="77"/>
+        <Button Content="Display Expense Records" HorizontalAlignment="Left" Height="28" Margin="572,570,0,0" VerticalAlignment="Top" Width="144" Click="Button_Click_2" Background="#FFA1161B" Foreground="White"  FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Supplier/Supplies Section" HorizontalAlignment="Left" Height="23" Margin="383,593,0,-173" VerticalAlignment="Top" Width="146"/>
+        <ComboBox Name="supplier" HorizontalAlignment="Left" Height="20" Margin="460,700,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="supplies" HorizontalAlignment="Left" Height="20" Margin="806,700,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Select Supplier :" HorizontalAlignment="Left" Height="28" Margin="361,700,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="Select Supplies :" HorizontalAlignment="Left" Height="28" Margin="706,698,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.31"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Content="Select Supply For Selected Supplier" HorizontalAlignment="Left" Height="24" Margin="355,784,0,0" VerticalAlignment="Top" Width="214" RenderTransformOrigin="0.427,0.69" Click="Button_Click_3" Background="#FFA1161B" Foreground="White"  FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Select Supplier For Selected Supply" HorizontalAlignment="Left" Height="23" Margin="777,785,0,0" VerticalAlignment="Top" Width="207" Click="Button_Click_4" Background="#FFA1161B" Foreground="White"  FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Order Section" HorizontalAlignment="Left" Margin="572,285,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.575,0.151" FontSize="16" FontFamily="Century Gothic" Width="115"/>
+        <Label Content="Expense Section" HorizontalAlignment="Left" Margin="582,474,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.575,0.151" FontSize="16" FontFamily="Century Gothic" Width="144"/>
+        <Label Content="Supplies/Supplier Section" HorizontalAlignment="Left" Margin="553,636,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.575,0.151" FontSize="16" FontFamily="Century Gothic" Width="205"/>
+
+    </Grid>
+</Window>

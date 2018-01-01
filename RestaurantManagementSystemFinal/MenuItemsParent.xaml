@@ -1,0 +1,101 @@
+﻿<Window x:Class="RestaurantManagementSystemFinal.MenuItemsParent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantManagementSystemFinal"
+        mc:Ignorable="d"
+        Title="Add Product Or Deals" Height="497.715" Width="1226.821">
+    <Grid Margin="0,0,-6.6,-20">
+        <StackPanel HorizontalAlignment="Right" Height="23" VerticalAlignment="Top" Width="1461" Background="#FFA1161B"/>
+        <Image HorizontalAlignment="Left" Height="132" Margin="47,0,0,0" VerticalAlignment="Top" Width="142" MouseLeftButtonDown="Image_MouseLeftButtonDown">
+            <Image.Source>
+                <BitmapImage UriSource="file:///C:\Users\Muhammad Hasham\source\repos\RestaurantManagementSystemFinal\RestaurantManagementSystemFinal\projImages\mainSRC.jpg"/>
+            </Image.Source>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="42" Margin="-254,101,0,0" Grid.Row="2">
+            <Image.Source>
+                <BitmapImage UriSource="file:///C:\Users\Muhammad Hasham\source\repos\RestaurantManagementSystemFinal\RestaurantManagementSystemFinal\projImages\fb.png"/>
+            </Image.Source>
+        </Image>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="234,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="prod_price" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="234,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="prod_quantity"/>
+        <Label Content="Product Name" HorizontalAlignment="Left" Margin="234,70,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Product Quantity" HorizontalAlignment="Left" Margin="234,197,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Product Price" HorizontalAlignment="Left" Margin="234,132,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter Product Detail" HorizontalAlignment="Left" Margin="214,36,0,0" VerticalAlignment="Top" Width="184" FontSize="18" FontWeight="Bold" FontFamily="Century Gothic"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="279,280,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" Background="#FFA1161B" Foreground="White" Height="31" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox Name="deal_name" HorizontalAlignment="Left" Height="23" Margin="957,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox Name="deal_price" HorizontalAlignment="Left" Height="23" Margin="957,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter Deal Details" HorizontalAlignment="Left" Margin="955,45,0,0" VerticalAlignment="Top" Width="184" FontSize="18" FontWeight="Bold" FontFamily="Century Gothic"/>
+        <Label Content="Deal Name" HorizontalAlignment="Left" Margin="955,83,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Deal Price" HorizontalAlignment="Left" Margin="957,148,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="977,280,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_1" Background="#FFA1161B" Foreground="White" Height="31" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="234,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="prod_name"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="400,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.578,0.359"/>
+
+        <ComboBox Name="combobox3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="412,104,0,0"/>
+        <Label Content="Select Deal :" HorizontalAlignment="Left" Margin="400,72,0,0" VerticalAlignment="Top"/>
+        <DataGrid Name="g1" HorizontalAlignment="Left" Height="115" Margin="321,336,0,0" VerticalAlignment="Top">
+            <DataGrid.Columns >
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <RadioButton Name="burger" Content=" &#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="400,168,0,0" VerticalAlignment="Top" Height="15" Width="16">
+        </RadioButton>
+        <RadioButton Name="sandwich" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="547,168,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="pizza" Content="&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="689,168,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="705,157,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.525,0.497">
+            <Image.Source>
+                <ImageSource>pizzaa.jpg</ImageSource>
+            </Image.Source>
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.017"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="46" Margin="570,161,0,0" VerticalAlignment="Top" Width="53" RenderTransformOrigin="0.525,0.497">
+            <Image.Source>
+                <ImageSource>sandd.jpg</ImageSource>
+            </Image.Source>
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.017"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="49" Margin="422,157,0,0" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.525,0.497">
+            <Image.Source>
+                <ImageSource>burger.png</ImageSource>
+            </Image.Source>
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.017"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Delete Last Product" HorizontalAlignment="Left" Margin="430,280,0,0" VerticalAlignment="Top" Width="136" Height="31" Background="#FFA1161B" Foreground="White"  FontWeight="Bold" Click="Button_Click_2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>
